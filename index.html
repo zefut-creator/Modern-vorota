@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102b50">
+<meta name="description" content="MODERN VOROTA — изготовление и установка ворот в Шымкенте. Оставьте заявку в WhatsApp.">
+<title>MODERN VOROTA — Изготовление и установка ворот</title>
+<style>
+:root {
+  --navy:#102b50;
+  --blue:#1e4c7d;
+  --blue2:#2c6196;
+  --white:#fff;
+  --bg:#f4f7fb;
+  --text:#17283d;
+  --muted:#6e7e91;
+  --line:#e4eaf1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topline{height:5px;background:linear-gradient(90deg,var(--navy),#4c83b7)}
+header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  height:82px;display:flex;align-items:center;
+  justify-content:space-between;gap:24px;
+}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{
+  width:47px;height:47px;border:2px solid var(--navy);
+  border-radius:12px;display:grid;place-items:center;
+  color:var(--navy);font-size:24px;font-weight:900;
+}
+.logo-name{font-size:19px;font-weight:900;letter-spacing:1px;color:var(--navy)}
+.logo-sub{font-size:9px;letter-spacing:3px;color:#71849a}
+.nav-links{display:flex;gap:27px;align-items:center;font-size:14px;font-weight:700}
+.nav-links a:hover{color:var(--blue2)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:14px 22px;border-radius:7px;
+  background:var(--navy);color:white;font-weight:700;
+  border:1px solid var(--navy);transition:.2s;
+}
+.btn:hover{background:var(--blue2);border-color:var(--blue2);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--navy)}
+.btn-outline:hover{color:white}
+.menu-btn{
+  display:none;background:none;border:0;color:var(--navy);
+  font-size:27px;cursor:pointer;
+}
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(115deg,#0b203b 0%,#153b65 65%,#245887 100%);
+  color:#fff;padding:100px 0 94px;
+}
+.hero:before,.hero:after{
+  content:"";position:absolute;border:1px solid #ffffff17;
+  border-radius:50%;pointer-events:none;
+}
+.hero:before{width:540px;height:540px;right:-100px;top:-260px}
+.hero:after{width:380px;height:380px;right:40px;bottom:-290px}
+.hero-grid{
+  position:relative;z-index:1;display:grid;
+  grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;
+}
+.eyebrow{
+  color:#b9d4f1;text-transform:uppercase;
+  letter-spacing:3px;font-size:12px;font-weight:800;
+}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.08;margin:20px 0}
+.hero-copy{font-size:18px;color:#d9e5f1;max-width:540px;margin-bottom:30px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+.hero .btn{background:white;color:var(--navy);border-color:white}
+.hero .btn-outline{background:transparent;color:white;border-color:#ffffff80}
+.hero-visual{
+  min-height:350px;border-radius:18px;
+  background:linear-gradient(145deg,#f5f8fc,#dbe6f1);
+  display:grid;place-items:center;padding:25px;
+  box-shadow:0 25px 60px #06172c55;
+}
+.hero-visual svg{width:100%;max-width:500px}
+.hero-note{font-size:12px;color:#6c8199;text-align:center;margin-top:12px}
+.trust-strip{background:#fff;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}
+.trust-item{text-align:center;border-right:1px solid var(--line);padding:5px 12px}
+.trust-item:last-child{border:0}
+.trust-item strong{display:block;color:var(--navy);font-size:17px}
+.trust-item span{font-size:12px;color:var(--muted)}
+section{padding:88px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 48px}
+.kicker{color:var(--blue2);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.section-head h2{font-size:clamp(28px,4vw,40px);color:var(--navy);line-height:1.2;margin:12px 0}
+.section-head p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-art{
+  min-height:350px;border-radius:15px;background:var(--bg);
+  display:grid;place-items:center;padding:25px;
+}
+.about-art svg{width:100%;max-width:430px}
+.about-text h2{font-size:36px;color:var(--navy);line-height:1.2;margin:12px 0 20px}
+.about-text p{color:var(--muted);margin-bottom:15px}
+.about-list{list-style:none;margin:22px 0}
+.about-list li{margin:11px 0;color:var(--text);font-weight:600}
+.about-list li:before{content:"✓";color:var(--blue2);font-weight:900;margin-right:12px}
+.services{background:var(--bg)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{
+  background:white;border:1px solid var(--line);
+  padding:30px;border-radius:12px;transition:.25s;
+}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #102b5010}
+.service-icon{
+  width:52px;height:52px;border-radius:12px;
+  background:#eaf1f8;color:var(--navy);
+  display:grid;place-items:center;font-size:25px;
+}
+.service-card h3{color:var(--navy);font-size:20px;margin:19px 0 9px}
+.service-card p{color:var(--muted);font-size:14px}
+.advantages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.advantage{text-align:center;padding:22px 15px}
+.adv-icon{font-size:30px;color:var(--blue2)}
+.advantage h3{color:var(--navy);font-size:18px;margin:13px 0 7px}
+.advantage p{color:var(--muted);font-size:14px}
+.works{background:var(--bg)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work-placeholder{
+  min-height:230px;border-radius:12px;
+  background:linear-gradient(145deg,#e5edf5,#cbd9e8);
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;text-align:center;padding:20px;
+  color:#49637e;border:1px solid #d7e1eb;
+}
+.work-placeholder span{font-size:35px;margin-bottom:10px}
+.work-placeholder strong{font-size:15px}
+.work-placeholder small{font-size:12px;margin-top:5px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.process-step{border-top:3px solid var(--blue2);padding:20px 12px 0}
+.process-step b{font-size:30px;color:#c3d2e1}
+.process-step h3{color:var(--navy);font-size:17px;margin:8px 0}
+.process-step p{font-size:13px;color:var(--muted)}
+.contact{
+  background:linear-gradient(115deg,#0b203b,#1b4978);
+  color:white;text-align:center;
+}
+.contact h2{font-size:clamp(29px,4vw,42px);margin:10px 0}
+.contact p{color:#d2e0ee;margin:0 auto 27px;max-width:570px}
+.contact .btn{background:white;color:var(--navy);border-color:white}
+.contact .kicker{color:#b9d4f1}
+footer{background:#091a30;color:#d0dbe7;padding:30px 0}
+.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-brand{font-weight:900;letter-spacing:1px}
+.footer-small{font-size:12px;color:#9fb1c5}
+footer a:hover{color:white}
+.float-wa{
+  position:fixed;right:22px;bottom:22px;z-index:30;
+  width:58px;height:58px;border-radius:50%;
+  display:grid;place-items:center;background:#1c9b62;
+  color:white;font-size:25px;box-shadow:0 8px 25px #0003;
+}
+@media(max-width:850px){
+ .nav-links{display:none;position:absolute;top:82px;left:0;right:0;
+ background:white;padding:20px 5%;border-bottom:1px solid var(--line);
+ flex-direction:column;align-items:flex-start;gap:18px}
+ .nav-links.open{display:flex}
+ .menu-btn{display:block}
+ .nav>.btn{display:none}
+ .hero-grid,.about-grid{grid-template-columns:1fr}
+ .hero{padding:70px 0}
+ .hero-visual{min-height:260px}
+ .service-grid,.advantages-grid{grid-template-columns:1fr 1fr}
+ .process-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ section{padding:65px 0}
+ .trust-grid{grid-template-columns:1fr;gap:12px}
+ .trust-item{border-right:0;border-bottom:1px solid var(--line);padding:12px}
+ .trust-item:last-child{border:0}
+ .service-grid,.advantages-grid,.work-grid,.process-grid{grid-template-columns:1fr}
+ .hero-copy{font-size:16px}
+ .hero-actions .btn{width:100%}
+ .about-text h2{font-size:29px}
+ .float-wa{right:15px;bottom:15px}
+}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#home">
+   <div class="logo-mark">M</div>
+   <div><div class="logo-name">MODERN VOROTA</div><div class="logo-sub">ВОРОТА И КОНСТРУКЦИИ</div></div>
+  </a>
+  <nav class="nav-links" id="navLinks">
+   <a href="#home">Главная</a>
+   <a href="#about">О компании</a>
+   <a href="#services">Услуги</a>
+   <a href="#works">Работы</a>
+   <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="btn" href="https://wa.me/77013157720">Оставить заявку</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">MODERN VOROTA · ШЫМКЕНТ</div>
+   <h1>Надёжные ворота для вашего пространства</h1>
+   <p class="hero-copy">Изготовление и установка ворот. Обсудите свой проект с MODERN VOROTA — поможем подобрать решение под ваши задачи.</p>
+   <div class="hero-actions">
+    <a class="btn" href="https://wa.me/77013157720">Обсудить проект ↗</a>
+    <a class="btn btn-outline" href="#services">Узнать подробнее</a>
+   </div>
+  </div>
+  <div>
+   <div class="hero-visual">
+    <svg viewBox="0 0 520 330" aria-label="Иллюстрация ворот">
+     <rect x="15" y="20" width="490" height="290" rx="12" fill="#e2eaf3"/>
+     <rect x="55" y="55" width="410" height="220" rx="4" fill="#183d69"/>
+     <g stroke="#b7cce1" stroke-width="5">
+      <path d="M90 55V275 M125 55V275 M160 55V275 M195 55V275 M230 55V275 M265 55V275 M300 55V275 M335 55V275 M370 55V275 M405 55V275 M440 55V275"/>
+     </g>
+     <path d="M45 52H475 M45 279H475" stroke="#102b50" stroke-width="9" stroke-linecap="round"/>
+     <path d="M35 290H485" stroke="#839bb5" stroke-width="5" stroke-linecap="round"/>
+     <circle cx="260" cy="164" r="6" fill="#fff"/>
+    </svg>
+   </div>
+   <div class="hero-note">MODERN VOROTA · Изготовление и установка ворот</div>
+  </div>
+ </div>
+</section>
+
+<div class="trust-strip">
+ <div class="container trust-grid">
+  <div class="trust-item"><strong>Шымкент</strong><span>Работаем в вашем городе</span></div>
+  <div class="trust-item"><strong>Производство</strong><span>Обсуждение изготовления ворот</span></div>
+  <div class="trust-item"><strong>Установка</strong><span>Обсуждение монтажа</span></div>
+ </div>
+</div>
+
+<section id="about">
+ <div class="container about-grid">
+  <div class="about-art">
+   <svg viewBox="0 0 450 320" aria-label="Схематичное изображение ворот">
+    <rect x="15" y="20" width="420" height="280" rx="14" fill="#e2eaf3"/>
+    <rect x="65" y="60" width="320" height="205" fill="#173b65"/>
+    <g stroke="#b8cde1" stroke-width="5">
+     <path d="M105 60V265 M145 60V265 M185 60V265 M225 60V265 M265 60V265 M305 60V265 M345 60V265"/>
+    </g>
+    <path d="M50 55H400 M50 270H400" stroke="#102b50" stroke-width="9"/>
+   </svg>
+  </div>
+  <div class="about-text">
+   <div class="kicker">О компании</div>
+   <h2>MODERN VOROTA — ваш проект начинается здесь</h2>
+   <p>Мы занимаемся изготовлением и установкой ворот в Шымкенте. Для нас важно понять задачу клиента и предложить подходящий вариант.</p>
+   <p>Расскажите, что вам нужно, — обсудим детали, размеры и пожелания к будущей конструкции.</p>
+   <ul class="about-list">
+    <li>Обсуждение проекта и пожеланий</li>
+    <li>Индивидуальный подход к задаче</li>
+    <li>Связь с компанией напрямую</li>
+   </ul>
+   <a class="btn" href="https://wa.me/77013157720">Связаться с нами</a>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="container">
+  <div class="section-head">
+   <div class="kicker">Чем занимаемся</div>
+   <h2>Наши услуги</h2>
+   <p>Основные направления работы MODERN VOROTA</p>
+  </div>
+  <div class="service-grid">
+   <article class="service-card">
+    <div class="service-icon">⌂</div>
+    <h3>Изготовление ворот</h3>
+    <p>Обсудим размеры, особенности объекта и пожелания к будущей конструкции.</p>
+   </article>
+   <article class="service-card">
+    <div class="service-icon">⚒</div>
+    <h3>Установка ворот</h3>
+    <p>Можно обсудить монтаж и особенности установки на вашем объекте.</p>
+   </article>
+   <article class="service-card">
+    <div class="service-icon">▣</div>
+    <h3>Консультация</h3>
+    <p>Ответим на вопросы и поможем определить подходящее решение для вашего проекта.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-head">
+   <div class="kicker">Наш подход</div>
+   <h2>Почему стоит обратиться к нам</h2>
+   <p>Каждый проект начинается с понимания ваших потребностей.</p>
+  </div>
+  <div class="advantages-grid">
+   <div class="advantage"><div class="adv-icon">◆</div><h3>Подход к каждому проекту</h3><p>Учитываем ваши пожелания и особенности территории.</p></div>
+   <div class="advantage"><div class="adv-icon">⌂</div><h3>Производство и установка</h3><p>Можно обсудить изготовление и монтаж в рамках одного обращения.</p></div>
+   <div class="advantage"><div class="adv-icon">✓</div><h3>Прямая связь</h3><p>Уточняйте детали проекта напрямую через WhatsApp.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="works" id="works">
+ <div class="container">
+  <div class="section-head">
+   <div class="kicker">Портфолио</div>
+   <h2>Наши работы</h2>
+   <p>Здесь будут фотографии реальных проектов MODERN VOROTA.</p>
+  </div>
+  <div class="work-grid">
+   <div class="work-placeholder"><span>▧</span><strong>Фотография проекта</strong><small>Место для реальной работы</small></div>
+   <div class="work-placeholder"><span>▧</span><strong>Фотография проекта</strong><small>Место для реальной работы</small></div>
+   <div class="work-placeholder"><span>▧</span><strong>Фотография проекта</strong><small>Место для реальной работы</small></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-head">
+   <div class="kicker">Как мы работаем</div>
+   <h2>Всего несколько шагов</h2>
+   <p>Начните с сообщения — остальные детали обсудим вместе.</p>
+  </div>
+  <div class="process-grid">
+   <div class="process-step"><b>01</b><h3>Заявка</h3><p>Вы пишете нам в WhatsApp.</p></div>
+   <div class="process-step"><b>02</b><h3>Обсуждение</h3><p>Уточняем задачу и ваши пожелания.</p></div>
+   <div class="process-step"><b>03</b><h3>Согласование</h3><p>Обсуждаем детали проекта.</p></div>
+   <div class="process-step"><b>04</b><h3>Работа</h3><p>Переходим к согласованному заказу.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contacts">
+ <div class="container">
+  <div class="kicker">Свяжитесь с нами</div>
+  <h2>Обсудим ваш проект?</h2>
+  <p>Напишите нам в WhatsApp. Расскажите, какие ворота вам нужны, и мы обсудим детали.</p>
+  <a class="btn" href="https://wa.me/77013157720">Написать в WhatsApp ↗</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-row">
+  <div><div class="footer-brand">MODERN VOROTA</div><div class="footer-small">Изготовление и установка ворот · Шымкент</div></div>
+  <a href="https://wa.me/77013157720">+7 701 315 7720</a>
+  <div class="footer-small">© 2026 MODERN VOROTA</div>
+ </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/77013157720" aria-label="Написать в WhatsApp">✆</a>
+
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{
+ navLinks.classList.toggle('open');
+ menuBtn.textContent=navLinks.classList.contains('open')?'×':'☰';
+});
+navLinks.querySelectorAll('a').forEach(link=>{
+ link.addEventListener('click',()=>{
+  navLinks.classList.remove('open');
+  menuBtn.textContent='☰';
+ });
+});
+</script>
+</body>
+</html>
