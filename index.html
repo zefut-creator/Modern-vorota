@@ -1,394 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#102b50">
-<meta name="description" content="MODERN VOROTA — изготовление и установка ворот в Шымкенте. Оставьте заявку в WhatsApp.">
-<title>MODERN VOROTA — Изготовление и установка ворот</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b35">
+<meta name="description" content="MODERN VOROTA — изготовление и установка современных ворот в Шымкенте. Откатные, распашные и автоматические ворота. Обсудить проект в WhatsApp.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website"><meta property="og:title" content="MODERN VOROTA — Ворота нового уровня">
+<meta property="og:description" content="Изготовление и установка ворот в Шымкенте. Современный дизайн, продуманные решения.">
+<meta property="og:locale" content="ru_KZ">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23071b35'/%3E%3Cpath d='M13 48V17h38v31M20 24h24M20 31h24M20 38h24' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>MODERN VOROTA — Современные ворота в Шымкенте</title>
+<link rel="preconnect" href="https://images.unsplash.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root {
-  --navy:#102b50;
-  --blue:#1e4c7d;
-  --blue2:#2c6196;
-  --white:#fff;
-  --bg:#f4f7fb;
-  --text:#17283d;
-  --muted:#6e7e91;
-  --line:#e4eaf1;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.6;
-}
-a{text-decoration:none;color:inherit}
-button{font:inherit}
-.container{width:min(1160px,92%);margin:auto}
-.topline{height:5px;background:linear-gradient(90deg,var(--navy),#4c83b7)}
-header{
-  position:sticky;top:0;z-index:20;
-  background:rgba(255,255,255,.96);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-}
-.nav{
-  height:82px;display:flex;align-items:center;
-  justify-content:space-between;gap:24px;
-}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-mark{
-  width:47px;height:47px;border:2px solid var(--navy);
-  border-radius:12px;display:grid;place-items:center;
-  color:var(--navy);font-size:24px;font-weight:900;
-}
-.logo-name{font-size:19px;font-weight:900;letter-spacing:1px;color:var(--navy)}
-.logo-sub{font-size:9px;letter-spacing:3px;color:#71849a}
-.nav-links{display:flex;gap:27px;align-items:center;font-size:14px;font-weight:700}
-.nav-links a:hover{color:var(--blue2)}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:14px 22px;border-radius:7px;
-  background:var(--navy);color:white;font-weight:700;
-  border:1px solid var(--navy);transition:.2s;
-}
-.btn:hover{background:var(--blue2);border-color:var(--blue2);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--navy)}
-.btn-outline:hover{color:white}
-.menu-btn{
-  display:none;background:none;border:0;color:var(--navy);
-  font-size:27px;cursor:pointer;
-}
-.hero{
-  position:relative;overflow:hidden;
-  background:linear-gradient(115deg,#0b203b 0%,#153b65 65%,#245887 100%);
-  color:#fff;padding:100px 0 94px;
-}
-.hero:before,.hero:after{
-  content:"";position:absolute;border:1px solid #ffffff17;
-  border-radius:50%;pointer-events:none;
-}
-.hero:before{width:540px;height:540px;right:-100px;top:-260px}
-.hero:after{width:380px;height:380px;right:40px;bottom:-290px}
-.hero-grid{
-  position:relative;z-index:1;display:grid;
-  grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;
-}
-.eyebrow{
-  color:#b9d4f1;text-transform:uppercase;
-  letter-spacing:3px;font-size:12px;font-weight:800;
-}
-h1{font-size:clamp(38px,5vw,64px);line-height:1.08;margin:20px 0}
-.hero-copy{font-size:18px;color:#d9e5f1;max-width:540px;margin-bottom:30px}
-.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
-.hero .btn{background:white;color:var(--navy);border-color:white}
-.hero .btn-outline{background:transparent;color:white;border-color:#ffffff80}
-.hero-visual{
-  min-height:350px;border-radius:18px;
-  background:linear-gradient(145deg,#f5f8fc,#dbe6f1);
-  display:grid;place-items:center;padding:25px;
-  box-shadow:0 25px 60px #06172c55;
-}
-.hero-visual svg{width:100%;max-width:500px}
-.hero-note{font-size:12px;color:#6c8199;text-align:center;margin-top:12px}
-.trust-strip{background:#fff;border-bottom:1px solid var(--line)}
-.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}
-.trust-item{text-align:center;border-right:1px solid var(--line);padding:5px 12px}
-.trust-item:last-child{border:0}
-.trust-item strong{display:block;color:var(--navy);font-size:17px}
-.trust-item span{font-size:12px;color:var(--muted)}
-section{padding:88px 0}
-.section-head{text-align:center;max-width:680px;margin:0 auto 48px}
-.kicker{color:var(--blue2);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-.section-head h2{font-size:clamp(28px,4vw,40px);color:var(--navy);line-height:1.2;margin:12px 0}
-.section-head p{color:var(--muted)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.about-art{
-  min-height:350px;border-radius:15px;background:var(--bg);
-  display:grid;place-items:center;padding:25px;
-}
-.about-art svg{width:100%;max-width:430px}
-.about-text h2{font-size:36px;color:var(--navy);line-height:1.2;margin:12px 0 20px}
-.about-text p{color:var(--muted);margin-bottom:15px}
-.about-list{list-style:none;margin:22px 0}
-.about-list li{margin:11px 0;color:var(--text);font-weight:600}
-.about-list li:before{content:"✓";color:var(--blue2);font-weight:900;margin-right:12px}
-.services{background:var(--bg)}
-.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.service-card{
-  background:white;border:1px solid var(--line);
-  padding:30px;border-radius:12px;transition:.25s;
-}
-.service-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #102b5010}
-.service-icon{
-  width:52px;height:52px;border-radius:12px;
-  background:#eaf1f8;color:var(--navy);
-  display:grid;place-items:center;font-size:25px;
-}
-.service-card h3{color:var(--navy);font-size:20px;margin:19px 0 9px}
-.service-card p{color:var(--muted);font-size:14px}
-.advantages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.advantage{text-align:center;padding:22px 15px}
-.adv-icon{font-size:30px;color:var(--blue2)}
-.advantage h3{color:var(--navy);font-size:18px;margin:13px 0 7px}
-.advantage p{color:var(--muted);font-size:14px}
-.works{background:var(--bg)}
-.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.work-placeholder{
-  min-height:230px;border-radius:12px;
-  background:linear-gradient(145deg,#e5edf5,#cbd9e8);
-  display:flex;align-items:center;justify-content:center;
-  flex-direction:column;text-align:center;padding:20px;
-  color:#49637e;border:1px solid #d7e1eb;
-}
-.work-placeholder span{font-size:35px;margin-bottom:10px}
-.work-placeholder strong{font-size:15px}
-.work-placeholder small{font-size:12px;margin-top:5px}
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.process-step{border-top:3px solid var(--blue2);padding:20px 12px 0}
-.process-step b{font-size:30px;color:#c3d2e1}
-.process-step h3{color:var(--navy);font-size:17px;margin:8px 0}
-.process-step p{font-size:13px;color:var(--muted)}
-.contact{
-  background:linear-gradient(115deg,#0b203b,#1b4978);
-  color:white;text-align:center;
-}
-.contact h2{font-size:clamp(29px,4vw,42px);margin:10px 0}
-.contact p{color:#d2e0ee;margin:0 auto 27px;max-width:570px}
-.contact .btn{background:white;color:var(--navy);border-color:white}
-.contact .kicker{color:#b9d4f1}
-footer{background:#091a30;color:#d0dbe7;padding:30px 0}
-.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.footer-brand{font-weight:900;letter-spacing:1px}
-.footer-small{font-size:12px;color:#9fb1c5}
-footer a:hover{color:white}
-.float-wa{
-  position:fixed;right:22px;bottom:22px;z-index:30;
-  width:58px;height:58px;border-radius:50%;
-  display:grid;place-items:center;background:#1c9b62;
-  color:white;font-size:25px;box-shadow:0 8px 25px #0003;
-}
-@media(max-width:850px){
- .nav-links{display:none;position:absolute;top:82px;left:0;right:0;
- background:white;padding:20px 5%;border-bottom:1px solid var(--line);
- flex-direction:column;align-items:flex-start;gap:18px}
- .nav-links.open{display:flex}
- .menu-btn{display:block}
- .nav>.btn{display:none}
- .hero-grid,.about-grid{grid-template-columns:1fr}
- .hero{padding:70px 0}
- .hero-visual{min-height:260px}
- .service-grid,.advantages-grid{grid-template-columns:1fr 1fr}
- .process-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
- section{padding:65px 0}
- .trust-grid{grid-template-columns:1fr;gap:12px}
- .trust-item{border-right:0;border-bottom:1px solid var(--line);padding:12px}
- .trust-item:last-child{border:0}
- .service-grid,.advantages-grid,.work-grid,.process-grid{grid-template-columns:1fr}
- .hero-copy{font-size:16px}
- .hero-actions .btn{width:100%}
- .about-text h2{font-size:29px}
- .float-wa{right:15px;bottom:15px}
-}
+:root{--ink:#071b35;--navy:#0b2545;--blue:#174a7a;--accent:#d9a85d;--paper:#f5f7fa;--muted:#738196;--line:#e4e9ef;--white:#fff;--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{font-family:Manrope,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}button{font:inherit}.container{width:min(1200px,91%);margin:auto}
+.topline{height:4px;background:linear-gradient(90deg,#071b35,#d9a85d,#174a7a)}
+header{position:sticky;top:0;z-index:50;background:#ffffffed;backdrop-filter:blur(16px);border-bottom:1px solid #e8edf2}
+.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}.brand-symbol{width:48px;height:48px;background:var(--ink);border-radius:14px;display:grid;place-items:center;box-shadow:0 8px 20px #071b3520}
+.brand-symbol svg{width:30px}.brand-title{font-weight:800;font-size:17px;letter-spacing:1.3px;line-height:1.2}.brand-sub{font-size:9px;letter-spacing:2.7px;color:#8793a3;margin-top:5px;font-weight:700}
+.nav-links{display:flex;gap:26px;align-items:center;font-size:12px;font-weight:700;color:#526176}.nav-links a{transition:.2s}.nav-links a:hover{color:#b17c31}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 23px;border-radius:12px;background:var(--ink);color:#fff;border:1px solid var(--ink);font-weight:800;font-size:13px;letter-spacing:.1px;transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #071b3526;background:#15395f}.btn-light{background:#fff;color:var(--ink);border-color:#fff}.btn-light:hover{background:#f0f4f8}.btn-ghost{background:transparent;border-color:#ffffff65;color:white}.btn-ghost:hover{background:#ffffff14}
+.menu-btn{display:none;background:none;border:0;font-size:27px;color:var(--ink);cursor:pointer}
+.hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:80px 0 75px;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06172beF 0%,#071b35c9 48%,#071b3520 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85') center/cover;z-index:-2}
+.hero:after{content:"";position:absolute;width:600px;height:600px;border:1px solid #ffffff12;border-radius:50%;right:-250px;top:-260px;z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:800;color:#d8b77f}.eyebrow:before{content:"";width:30px;height:1px;background:var(--accent)}
+h1{font-size:clamp(42px,5.5vw,72px);line-height:1.08;letter-spacing:-3px;margin:22px 0 24px;font-weight:800}
+h1 em{font-style:normal;color:#e4bd7e}
+.hero-copy{font-size:16px;color:#c5d0de;max-width:520px;margin-bottom:32px;line-height:1.9}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-meta{display:flex;align-items:center;gap:22px;margin-top:38px;color:#aab8c9;font-size:11px}.hero-meta span{display:flex;align-items:center;gap:8px}.hero-meta i{width:6px;height:6px;background:var(--accent);border-radius:50%}
+.hero-photo{position:relative;min-height:410px;border:1px solid #ffffff30;border-radius:24px;overflow:hidden;background:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85') center/cover;box-shadow:0 35px 80px #0005}
+.photo-label{position:absolute;bottom:20px;left:20px;right:20px;background:#071b35b9;backdrop-filter:blur(12px);border:1px solid #ffffff25;border-radius:15px;padding:17px 20px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.photo-label b{font-size:13px}.photo-label small{display:block;color:#b9c7d7;font-size:10px;margin-top:4px}.photo-label .num{font-size:25px;color:#e4bd7e;font-weight:800}
+.trust{border-bottom:1px solid var(--line);background:white}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:25px 0}
+.trust-item{padding:4px 20px;border-right:1px solid var(--line);display:flex;gap:12px;align-items:center}.trust-item:first-child{padding-left:0}.trust-item:last-child{border:0}.trust-icon{width:36px;height:36px;border-radius:11px;background:#f3f0e9;color:#9d7437;display:grid;place-items:center;font-size:16px;flex-shrink:0}.trust-item strong{display:block;font-size:12px}.trust-item small{font-size:10px;color:var(--muted)}
+section{padding:100px 0}.section-head{max-width:690px;margin-bottom:48px}.section-head.center{text-align:center;margin:0 auto 50px}.kicker{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#a77a39;font-weight:800}.section-head h2,.about h2{font-size:clamp(30px,4vw,48px);line-height:1.16;letter-spacing:-1.7px;margin:14px 0 17px;font-weight:800}.section-head p{color:var(--muted);font-size:14px;line-height:1.9}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.about-photo{min-height:470px;border-radius:24px;background:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative}
+.about-badge{position:absolute;bottom:24px;right:-20px;background:var(--ink);color:#fff;padding:22px 25px;border-radius:17px;box-shadow:0 18px 40px #071b352b}.about-badge b{font-size:26px;display:block;color:#e4bd7e}.about-badge small{font-size:10px;color:#bdc9d7}
+.about p{font-size:14px;color:var(--muted);margin:13px 0}.check-list{list-style:none;margin:25px 0 30px}.check-list li{display:flex;gap:12px;align-items:flex-start;margin:12px 0;font-size:13px;font-weight:700}.check-list li:before{content:"✓";width:22px;height:22px;display:grid;place-items:center;background:#f4ead9;color:#986d2e;border-radius:7px;flex-shrink:0}
+.services{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{background:white;border:1px solid #e8edf2;border-radius:20px;overflow:hidden;transition:.3s}.service-card:hover{transform:translateY(-7px);box-shadow:0 24px 50px #071b3510}
+.service-img{height:230px;background-size:cover;background-position:center;position:relative}.service-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071b3540,transparent 55%)}
+.service-body{padding:26px}.service-top{display:flex;justify-content:space-between;align-items:center}.service-num{font-size:10px;color:#a77a39;font-weight:800;letter-spacing:2px}.service-arrow{width:35px;height:35px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--blue);transition:.2s}.service-card:hover .service-arrow{background:var(--ink);color:white}
+.service-card h3{font-size:19px;margin:13px 0 9px;letter-spacing:-.5px}.service-card p{font-size:12px;color:var(--muted);line-height:1.8}
+.service-foot{margin-top:19px;padding-top:15px;border-top:1px solid var(--line);font-size:11px;font-weight:800;color:#53657b}
+.advantages{background:var(--ink);color:#fff}.advantages .section-head h2{color:white}.advantages .section-head p{color:#aab8c9}
+.adv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.adv{border-top:1px solid #ffffff25;padding:24px 5px 0}.adv .icon{font-size:24px;color:#e4bd7e}.adv h3{font-size:15px;margin:17px 0 9px}.adv p{font-size:12px;color:#aab8c9;line-height:1.8}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:15px}.gallery-img{min-height:260px;border-radius:18px;background-size:cover;background-position:center;position:relative;overflow:hidden}.gallery-img:first-child{grid-row:span 2;min-height:535px}.gallery-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071b3590,transparent 55%)}.gallery-caption{position:absolute;bottom:20px;left:20px;z-index:1;color:white;font-size:13px;font-weight:800}.gallery-caption small{display:block;color:#d1dbe7;font-size:10px;font-weight:500;margin-top:4px}
+.steps{background:#f7f8fa}.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{background:white;padding:25px;border-radius:16px;border:1px solid #e9edf2}.step .n{font-size:29px;font-weight:800;color:#d6b47c}.step h3{font-size:14px;margin:12px 0 7px}.step p{font-size:11px;color:var(--muted);line-height:1.8}
+.contact{background:linear-gradient(120deg,#0b2545,#174a7a);color:#fff;position:relative;overflow:hidden}.contact:after{content:"MV";position:absolute;right:-20px;bottom:-150px;font-size:400px;font-weight:800;color:#ffffff06;line-height:1}
+.contact-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:40px}.contact h2{font-size:clamp(30px,4vw,48px);letter-spacing:-1.5px;line-height:1.15;margin:12px 0}.contact p{font-size:13px;color:#c6d4e3;max-width:570px}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.contact-aside{flex-shrink:0;border:1px solid #ffffff25;border-radius:18px;padding:25px 30px;background:#ffffff0a}.contact-aside small{font-size:10px;color:#b8c8d9;display:block}.contact-aside b{font-size:19px;display:block;margin:7px 0}
+footer{background:#06152a;color:#c3cfdd;padding:32px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}.footer-brand{font-size:14px;font-weight:800;letter-spacing:1px;color:white}.footer-note{font-size:10px;color:#7f93aa;margin-top:5px}.footer-links{display:flex;gap:18px;font-size:11px}.footer-links a:hover{color:#e4bd7e}
+.float-wa{position:fixed;right:22px;bottom:22px;z-index:40;width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:#21a366;color:#fff;font-size:25px;box-shadow:0 10px 30px #0003;transition:.2s}.float-wa:hover{transform:translateY(-4px)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.nav-links{gap:15px}.nav-links a{font-size:11px}.nav>.btn{display:none}.hero-grid{gap:35px}.hero-photo{min-height:340px}.about-grid{gap:40px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:15px}.trust-item:nth-child(2){border:0}.adv-grid{grid-template-columns:repeat(2,1fr)}.contact-inner{align-items:flex-start;flex-direction:column}.contact-aside{width:100%}}
+@media(max-width:650px){.nav{height:75px}.brand-symbol{width:43px;height:43px}.brand-title{font-size:14px}.brand-sub{font-size:8px;letter-spacing:2px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:75px;left:0;right:0;background:white;padding:22px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.hero{padding:58px 0 55px}.hero-grid,.about-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.hero-copy{font-size:14px}.hero-photo{min-height:300px}.hero-meta{flex-wrap:wrap;gap:12px}.trust-grid{grid-template-columns:1fr;padding:15px 0}.trust-item,.trust-item:first-child{border:0;padding:10px 0}.trust-item:nth-child(2){border:0}section{padding:70px 0}.about-photo{min-height:340px}.about-badge{right:12px;bottom:15px}.service-grid{grid-template-columns:1fr}.service-img{height:220px}.adv-grid{grid-template-columns:1fr 1fr;gap:18px}.gallery{grid-template-columns:1fr 1fr}.gallery-img:first-child{grid-row:auto;grid-column:span 2;min-height:320px}.gallery-img{min-height:200px}.steps-grid{grid-template-columns:1fr 1fr;gap:12px}.step{padding:18px}.contact-actions .btn{width:100%}.footer-row{align-items:flex-start;flex-direction:column}.float-wa{right:15px;bottom:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
 </style>
 </head>
 <body>
 <div class="topline"></div>
-<header>
- <div class="container nav">
-  <a class="logo" href="#home">
-   <div class="logo-mark">M</div>
-   <div><div class="logo-name">MODERN VOROTA</div><div class="logo-sub">ВОРОТА И КОНСТРУКЦИИ</div></div>
-  </a>
-  <nav class="nav-links" id="navLinks">
-   <a href="#home">Главная</a>
-   <a href="#about">О компании</a>
-   <a href="#services">Услуги</a>
-   <a href="#works">Работы</a>
-   <a href="#contacts">Контакты</a>
-  </nav>
-  <a class="btn" href="https://wa.me/77013157720">Оставить заявку</a>
-  <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
- </div>
-</header>
-
+<header><div class="container nav">
+<a class="brand" href="#home" aria-label="MODERN VOROTA — главная"><span class="brand-symbol"><svg viewBox="0 0 40 40" fill="none"><path d="M6 34V6h28v28M11 13h18M11 20h18M11 27h18" stroke="white" stroke-width="2.7" stroke-linecap="round"/></svg></span><span><span class="brand-title">MODERN VOROTA</span><span class="brand-sub">ВОРОТА · КОНСТРУКЦИИ</span></span></a>
+<nav class="nav-links" id="navLinks"><a href="#about">О компании</a><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#process">Этапы</a><a href="#contacts">Контакты</a></nav>
+<a class="btn" href="https://wa.me/77013157720" target="_blank" rel="noopener">Обсудить проект <span>↗</span></a><button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
+</div></header>
 <main>
-<section class="hero" id="home">
- <div class="container hero-grid">
-  <div>
-   <div class="eyebrow">MODERN VOROTA · ШЫМКЕНТ</div>
-   <h1>Надёжные ворота для вашего пространства</h1>
-   <p class="hero-copy">Изготовление и установка ворот. Обсудите свой проект с MODERN VOROTA — поможем подобрать решение под ваши задачи.</p>
-   <div class="hero-actions">
-    <a class="btn" href="https://wa.me/77013157720">Обсудить проект ↗</a>
-    <a class="btn btn-outline" href="#services">Узнать подробнее</a>
-   </div>
-  </div>
-  <div>
-   <div class="hero-visual">
-    <svg viewBox="0 0 520 330" aria-label="Иллюстрация ворот">
-     <rect x="15" y="20" width="490" height="290" rx="12" fill="#e2eaf3"/>
-     <rect x="55" y="55" width="410" height="220" rx="4" fill="#183d69"/>
-     <g stroke="#b7cce1" stroke-width="5">
-      <path d="M90 55V275 M125 55V275 M160 55V275 M195 55V275 M230 55V275 M265 55V275 M300 55V275 M335 55V275 M370 55V275 M405 55V275 M440 55V275"/>
-     </g>
-     <path d="M45 52H475 M45 279H475" stroke="#102b50" stroke-width="9" stroke-linecap="round"/>
-     <path d="M35 290H485" stroke="#839bb5" stroke-width="5" stroke-linecap="round"/>
-     <circle cx="260" cy="164" r="6" fill="#fff"/>
-    </svg>
-   </div>
-   <div class="hero-note">MODERN VOROTA · Изготовление и установка ворот</div>
-  </div>
- </div>
-</section>
-
-<div class="trust-strip">
- <div class="container trust-grid">
-  <div class="trust-item"><strong>Шымкент</strong><span>Работаем в вашем городе</span></div>
-  <div class="trust-item"><strong>Производство</strong><span>Обсуждение изготовления ворот</span></div>
-  <div class="trust-item"><strong>Установка</strong><span>Обсуждение монтажа</span></div>
- </div>
-</div>
-
-<section id="about">
- <div class="container about-grid">
-  <div class="about-art">
-   <svg viewBox="0 0 450 320" aria-label="Схематичное изображение ворот">
-    <rect x="15" y="20" width="420" height="280" rx="14" fill="#e2eaf3"/>
-    <rect x="65" y="60" width="320" height="205" fill="#173b65"/>
-    <g stroke="#b8cde1" stroke-width="5">
-     <path d="M105 60V265 M145 60V265 M185 60V265 M225 60V265 M265 60V265 M305 60V265 M345 60V265"/>
-    </g>
-    <path d="M50 55H400 M50 270H400" stroke="#102b50" stroke-width="9"/>
-   </svg>
-  </div>
-  <div class="about-text">
-   <div class="kicker">О компании</div>
-   <h2>MODERN VOROTA — ваш проект начинается здесь</h2>
-   <p>Мы занимаемся изготовлением и установкой ворот в Шымкенте. Для нас важно понять задачу клиента и предложить подходящий вариант.</p>
-   <p>Расскажите, что вам нужно, — обсудим детали, размеры и пожелания к будущей конструкции.</p>
-   <ul class="about-list">
-    <li>Обсуждение проекта и пожеланий</li>
-    <li>Индивидуальный подход к задаче</li>
-    <li>Связь с компанией напрямую</li>
-   </ul>
-   <a class="btn" href="https://wa.me/77013157720">Связаться с нами</a>
-  </div>
- </div>
-</section>
-
-<section class="services" id="services">
- <div class="container">
-  <div class="section-head">
-   <div class="kicker">Чем занимаемся</div>
-   <h2>Наши услуги</h2>
-   <p>Основные направления работы MODERN VOROTA</p>
-  </div>
-  <div class="service-grid">
-   <article class="service-card">
-    <div class="service-icon">⌂</div>
-    <h3>Изготовление ворот</h3>
-    <p>Обсудим размеры, особенности объекта и пожелания к будущей конструкции.</p>
-   </article>
-   <article class="service-card">
-    <div class="service-icon">⚒</div>
-    <h3>Установка ворот</h3>
-    <p>Можно обсудить монтаж и особенности установки на вашем объекте.</p>
-   </article>
-   <article class="service-card">
-    <div class="service-icon">▣</div>
-    <h3>Консультация</h3>
-    <p>Ответим на вопросы и поможем определить подходящее решение для вашего проекта.</p>
-   </article>
-  </div>
- </div>
-</section>
-
-<section>
- <div class="container">
-  <div class="section-head">
-   <div class="kicker">Наш подход</div>
-   <h2>Почему стоит обратиться к нам</h2>
-   <p>Каждый проект начинается с понимания ваших потребностей.</p>
-  </div>
-  <div class="advantages-grid">
-   <div class="advantage"><div class="adv-icon">◆</div><h3>Подход к каждому проекту</h3><p>Учитываем ваши пожелания и особенности территории.</p></div>
-   <div class="advantage"><div class="adv-icon">⌂</div><h3>Производство и установка</h3><p>Можно обсудить изготовление и монтаж в рамках одного обращения.</p></div>
-   <div class="advantage"><div class="adv-icon">✓</div><h3>Прямая связь</h3><p>Уточняйте детали проекта напрямую через WhatsApp.</p></div>
-  </div>
- </div>
-</section>
-
-<section class="works" id="works">
- <div class="container">
-  <div class="section-head">
-   <div class="kicker">Портфолио</div>
-   <h2>Наши работы</h2>
-   <p>Здесь будут фотографии реальных проектов MODERN VOROTA.</p>
-  </div>
-  <div class="work-grid">
-   <div class="work-placeholder"><span>▧</span><strong>Фотография проекта</strong><small>Место для реальной работы</small></div>
-   <div class="work-placeholder"><span>▧</span><strong>Фотография проекта</strong><small>Место для реальной работы</small></div>
-   <div class="work-placeholder"><span>▧</span><strong>Фотография проекта</strong><small>Место для реальной работы</small></div>
-  </div>
- </div>
-</section>
-
-<section>
- <div class="container">
-  <div class="section-head">
-   <div class="kicker">Как мы работаем</div>
-   <h2>Всего несколько шагов</h2>
-   <p>Начните с сообщения — остальные детали обсудим вместе.</p>
-  </div>
-  <div class="process-grid">
-   <div class="process-step"><b>01</b><h3>Заявка</h3><p>Вы пишете нам в WhatsApp.</p></div>
-   <div class="process-step"><b>02</b><h3>Обсуждение</h3><p>Уточняем задачу и ваши пожелания.</p></div>
-   <div class="process-step"><b>03</b><h3>Согласование</h3><p>Обсуждаем детали проекта.</p></div>
-   <div class="process-step"><b>04</b><h3>Работа</h3><p>Переходим к согласованному заказу.</p></div>
-  </div>
- </div>
-</section>
-
-<section class="contact" id="contacts">
- <div class="container">
-  <div class="kicker">Свяжитесь с нами</div>
-  <h2>Обсудим ваш проект?</h2>
-  <p>Напишите нам в WhatsApp. Расскажите, какие ворота вам нужны, и мы обсудим детали.</p>
-  <a class="btn" href="https://wa.me/77013157720">Написать в WhatsApp ↗</a>
- </div>
-</section>
+<section class="hero" id="home"><div class="container hero-grid">
+<div class="reveal"><div class="eyebrow">MODERN VOROTA · ШЫМКЕНТ</div><h1>Ворота, которые<br><em>задают стиль.</em></h1><p class="hero-copy">Современные решения для дома и бизнеса. Изготовление и установка ворот с вниманием к каждой детали.</p>
+<div class="hero-actions"><a class="btn btn-light" href="https://wa.me/77013157720" target="_blank" rel="noopener">Рассчитать мой проект ↗</a><a class="btn btn-ghost" href="#services">Наши решения ↓</a></div>
+<div class="hero-meta"><span><i></i> Индивидуальный подход</span><span><i></i> Шымкент и область</span></div></div>
+<div class="hero-photo reveal"><div class="photo-label"><div><b>Архитектура начинается с входа</b><small>Эстетика · Надёжность · Функциональность</small></div><span class="num">MV.</span></div></div>
+</div></section>
+<div class="trust"><div class="container trust-grid">
+<div class="trust-item"><span class="trust-icon">⌂</span><div><strong>Для дома и бизнеса</strong><small>Решения под ваш объект</small></div></div>
+<div class="trust-item"><span class="trust-icon">✳</span><div><strong>Современный дизайн</strong><small>Аккуратный внешний вид</small></div></div>
+<div class="trust-item"><span class="trust-icon">⚒</span><div><strong>Изготовление и монтаж</strong><small>Комплексный подход</small></div></div>
+<div class="trust-item"><span class="trust-icon">↗</span><div><strong>На связи напрямую</strong><small>Обсудим детали в WhatsApp</small></div></div>
+</div></div>
+<section id="about"><div class="container about-grid">
+<div class="about-photo reveal"><div class="about-badge"><b>MODERN</b><small>Продумано до деталей</small></div></div>
+<div class="about reveal"><div class="kicker">О компании</div><h2>Ваш участок.<br>Ваш стиль.<br>Ваши ворота.</h2><p>MODERN VOROTA — изготовление и установка ворот в Шымкенте. Помогаем превратить идею в продуманное решение для вашего пространства.</p><p>Обсуждаем размеры, внешний вид, особенности участка и пожелания, чтобы подобрать подходящий вариант именно под вашу задачу.</p><ul class="check-list"><li>Внимание к внешнему виду и деталям</li><li>Решения под особенности территории</li><li>Общение и согласование напрямую</li></ul><a class="btn" href="https://wa.me/77013157720" target="_blank" rel="noopener">Расскажите о своей идее ↗</a></div>
+</div></section>
+<section class="services" id="services"><div class="container"><div class="section-head center reveal"><div class="kicker">Что мы предлагаем</div><h2>Решения для вашего пространства</h2><p>Подберём формат ворот и обсудим исполнение, которое будет удобно именно вам.</p></div>
+<div class="service-grid">
+<article class="service-card reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85')"></div><div class="service-body"><div class="service-top"><span class="service-num">01 / ВОРОТА</span><span class="service-arrow">↗</span></div><h3>Откатные ворота</h3><p>Практичное решение для въезда: створка движется вдоль ограждения и не занимает пространство перед проёмом.</p><div class="service-foot">Удобство · Современный вид</div></div></article>
+<article class="service-card reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85')"></div><div class="service-body"><div class="service-top"><span class="service-num">02 / ВОРОТА</span><span class="service-arrow">↗</span></div><h3>Распашные ворота</h3><p>Классическая конструкция с выразительным внешним видом и возможностью подобрать дизайн под фасад.</p><div class="service-foot">Классика · Индивидуальный дизайн</div></div></article>
+<article class="service-card reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85')"></div><div class="service-body"><div class="service-top"><span class="service-num">03 / КОМФОРТ</span><span class="service-arrow">↗</span></div><h3>Автоматизация</h3><p>Обсудим автоматический привод и удобное управление воротами с учётом вашей конструкции.</p><div class="service-foot">Комфорт · Управление</div></div></article>
+</div></div></section>
+<section class="advantages"><div class="container"><div class="section-head reveal"><div class="kicker">Наш подход</div><h2>Красота — в деталях.<br>Надёжность — в решениях.</h2><p>Мы стремимся, чтобы будущие ворота гармонично дополняли объект и отвечали вашей задаче.</p></div>
+<div class="adv-grid"><div class="adv reveal"><div class="icon">◇</div><h3>Индивидуальный проект</h3><p>Учитываем размеры, особенности въезда и ваши пожелания к дизайну.</p></div><div class="adv reveal"><div class="icon">▤</div><h3>Внимание к эстетике</h3><p>Обсуждаем цвет, форму и внешний вид конструкции.</p></div><div class="adv reveal"><div class="icon">⚙</div><h3>Функциональность</h3><p>Подбираем формат открытия и дополнительные решения под сценарии использования.</p></div><div class="adv reveal"><div class="icon">↗</div><h3>Понятная коммуникация</h3><p>Все детали проекта можно обсудить напрямую с командой.</p></div></div></div></section>
+<section id="works"><div class="container"><div class="section-head center reveal"><div class="kicker">Вдохновение</div><h2>Ворота в современном стиле</h2><p>Примеры визуальных решений и эстетики. Фотографии собственных выполненных объектов можно добавить в эту галерею.</p></div>
+<div class="gallery"><div class="gallery-img reveal" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85')"><div class="gallery-caption">Современная архитектура<small>Лаконичные линии и фактуры</small></div></div><div class="gallery-img reveal" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85')"><div class="gallery-caption">Чистый дизайн<small>Минимализм</small></div></div><div class="gallery-img reveal" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85')"><div class="gallery-caption">Детали пространства<small>Гармония с фасадом</small></div></div><div class="gallery-img reveal" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85')"><div class="gallery-caption">Современный стиль<small>Сдержанная эстетика</small></div></div><div class="gallery-img reveal" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85')"><div class="gallery-caption">Продуманный въезд<small>Форма и функциональность</small></div></div></div>
+</div></section>
+<section class="steps" id="process"><div class="container"><div class="section-head center reveal"><div class="kicker">Просто и понятно</div><h2>Как начинается ваш проект</h2><p>Четыре понятных шага от первого сообщения до согласованной работы.</p></div><div class="steps-grid">
+<div class="step reveal"><div class="n">01</div><h3>Свяжитесь с нами</h3><p>Напишите в WhatsApp и расскажите, какие ворота вам нужны.</p></div><div class="step reveal"><div class="n">02</div><h3>Обсудим задачу</h3><p>Уточним размеры, пожелания, особенности участка и детали.</p></div><div class="step reveal"><div class="n">03</div><h3>Согласуем решение</h3><p>Обсудим подходящий формат, исполнение и условия.</p></div><div class="step reveal"><div class="n">04</div><h3>Приступим к работе</h3><p>После согласования деталей переходим к реализации проекта.</p></div>
+</div></div></section>
+<section class="contact" id="contacts"><div class="container contact-inner"><div class="reveal"><div class="kicker">MODERN VOROTA · ШЫМКЕНТ</div><h2>Есть идея?<br>Давайте воплотим её.</h2><p>Напишите нам — обсудим ваш участок, будущие ворота и варианты исполнения. Ответим на вопросы и поможем сориентироваться.</p><div class="contact-actions"><a class="btn btn-light" href="https://wa.me/77013157720" target="_blank" rel="noopener">Написать в WhatsApp ↗</a><a class="btn btn-ghost" href="tel:+77013157720">Позвонить</a></div></div><div class="contact-aside reveal"><small>БЫСТРАЯ СВЯЗЬ</small><b>+7 701 315 7720</b><small>WhatsApp · Шымкент, Казахстан</small></div></div></section>
 </main>
-
-<footer>
- <div class="container footer-row">
-  <div><div class="footer-brand">MODERN VOROTA</div><div class="footer-small">Изготовление и установка ворот · Шымкент</div></div>
-  <a href="https://wa.me/77013157720">+7 701 315 7720</a>
-  <div class="footer-small">© 2026 MODERN VOROTA</div>
- </div>
-</footer>
-
-<a class="float-wa" href="https://wa.me/77013157720" aria-label="Написать в WhatsApp">✆</a>
-
+<footer><div class="container footer-row"><div><div class="footer-brand">MODERN VOROTA</div><div class="footer-note">Изготовление и установка ворот · Шымкент</div></div><div class="footer-links"><a href="#about">О компании</a><a href="#services">Услуги</a><a href="#contacts">Контакты</a></div><div class="footer-note">© 2026 MODERN VOROTA</div></div></footer>
+<a class="float-wa" href="https://wa.me/77013157720" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">◉</a>
 <script>
-const menuBtn=document.getElementById('menuBtn');
-const navLinks=document.getElementById('navLinks');
-menuBtn.addEventListener('click',()=>{
- navLinks.classList.toggle('open');
- menuBtn.textContent=navLinks.classList.contains('open')?'×':'☰';
-});
-navLinks.querySelectorAll('a').forEach(link=>{
- link.addEventListener('click',()=>{
-  navLinks.classList.remove('open');
-  menuBtn.textContent='☰';
- });
-});
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{navLinks.classList.toggle('open');menuBtn.textContent=navLinks.classList.contains('open')?'×':'☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.textContent='☰'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
-</body>
-</html>
+</body></html>
